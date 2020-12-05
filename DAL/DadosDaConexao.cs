@@ -1,18 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DAL
+﻿namespace DAL
 {
     public class DadosDaConexao
     {
-        public static string servidor = "172.16.22.25";
-        //public static string porta = "5432";
-        public static string banco = "Estudo";
-        public static string usuario = "ramos";
-        public static string senha = "";
+
+        #region Banco Casa Testes
+        //public static string servidor = "192.168.1.3";
+        //public static string banco = "Pesquisa";
+        //public static string usuario = "sa";
+        //public static string senha = "Kakashi13";
+        #endregion
+
+        #region Banco Carlos
+        //public static string servidor = "172.16.22.25";
+        //public static string banco = "Estudo";
+        //public static string usuario = "ramos";
+        //public static string porta = "1621";
+        //public static string senha = "p!ant3c10";
+        #endregion
+
+        #region Banco Plantec Produção
+        public static string servidor = "172.16.27.31";
+        public static string banco = "Pesquisa";
+        public static string usuario = "sa";
+        public static string senha = "C@pella10";
+        #endregion
 
         public static string StringDeConexao
         {
@@ -20,7 +31,7 @@ namespace DAL
             {
                 return "Data Source=" + servidor + ";Initial Catalog=" + banco + ";Persist Security Info=True;User ID=" + usuario + ";Password=" + senha;
 
-                //return "Server ="+ servidor +"; Port ="+ porta +"; Database ="+ banco +"; User Id ="+ usuario +";Password ="+ senha;
+                //return "Data Source=" + servidor + "," + porta + "," + ";Initial Catalog=" + banco + ";Persist Security Info=True;User ID=" + usuario + ";Password=" + senha;//                
             }
         }
     }

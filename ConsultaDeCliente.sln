@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferramentas", "Ferramentas\Ferramentas.csproj", "{5A8ACE4C-9FB1-43BE-A27B-F15D6F3029ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icon", "Icon", "{8C47237F-6AA6-4FE3-BA6F-04EAFF7771C5}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\pltg122\Downloads\if_JD-32_2624869.ico = C:\Users\pltg122\Downloads\if_JD-32_2624869.ico
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -24,6 +24,12 @@ namespace BLL
             return DALobj.Localizar();
         }
 
+        public DataTable LocalizarPorDatar(DateTime inicio,DateTime final)
+        {
+            DALCliente DALobj = new DALCliente(conexao);
+            return DALobj.LocalizarPorData(inicio,final);
+        }
+
         public ModeloCliente CarregaModeloCliente()
         {
             DALCliente DALobj = new DALCliente(conexao);

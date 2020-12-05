@@ -13,13 +13,16 @@ namespace Modelo
             ConCod = 0;
             ConCnpjCpf = "";
             ConTel = "";
+            ConFila = "";
         }
-        public ModeloCliente(int concod, string concnpjcpf,string contel)
+
+        public ModeloCliente(int concod, string concnpjcpf,string contel, string confila, DateTime condata)
         {
             ConCod = concod;
             ConCnpjCpf = concnpjcpf;
             ConTel = contel;
-
+            ConData = condata;
+            ConFila = confila;
         }
 
         private int con_cod;
@@ -43,6 +46,22 @@ namespace Modelo
             get { return con_tel; }
             set { con_tel = value; }
 
+        }
+
+        private string con_fila;
+        public string ConFila
+        {
+            get { return con_fila; }
+            set { con_fila = value; }
+
+        }
+
+        private DateTime con_data;
+
+        public DateTime ConData
+        {
+            get { return con_data; }
+            set { con_data = value; }
         }
     }
 }
